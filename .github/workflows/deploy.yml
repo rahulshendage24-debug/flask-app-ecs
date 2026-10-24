@@ -27,7 +27,7 @@ jobs:
           tags: ghcr.io/${{ github.actor }}/${{ github.event.repository.name }}:latest
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build-and-push
     
     steps:
